@@ -9,7 +9,7 @@ export const WebSocketProvider = ({ children }) => {
   const [messages, setMessages] = useState([]);
   
   useEffect(() => {
-    const socket = new WebSocket('wss://localhost:8080');
+    const socket = new WebSocket('wss://https://hitwicket-backend.vercel.app/');
     setWs(socket);
 
     socket.onopen = () => {
